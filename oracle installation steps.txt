@@ -1,0 +1,34 @@
+1)Download oracle
+visit www.yourwindowsworld.com oracle 10g
+207MB .exe file is downloaded into downloads directory
+
+2)installation procedure
+double click on the exe file
+c:/>oracleexe
+click on next
+Password:iare
+Reenter password:iare
+click on next and finish buttons
+
+3)configuring oracle 
+c:\oraclexe\app\oracle\product\10.2.0\server\BIN
+c:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14.jar
+open run
+
+4)own user creation
+open run promt and type edit the system environment
+variables-> in the advanced tab->click on Environment
+variables-> Include oracle\bin directory in PATH
+
+create a new CLASSPATH env var
+click on New button
+Variable Name: CLASSPATH
+variable value:.;c:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14.jar
+click on OK,OK,OK buttons
+
+5)Before writing JDBC program we mst verify the CLASSPATH
+open command prompt
+c:\>javap oracle.jdbc.driver.OracleDriver
+
+6)creating resitration table
+7)JDBC program
